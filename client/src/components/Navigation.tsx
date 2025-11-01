@@ -25,11 +25,8 @@ export default function Navigation() {
       {/* Main Navigation */}
       <div className="container flex items-center justify-between py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 font-bold text-xl text-foreground hover:text-accent transition">
-          <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center text-white font-bold">
-            WAA
-          </div>
-          <span className="hidden sm:inline">Wale Awojobi</span>
+        <Link href="/" className="flex items-center gap-2 font-bold text-xl text-foreground hover:opacity-80 transition">
+          <img src="/logo.png" alt="Wale Awojobi Associates" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
