@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -119,6 +121,16 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Lora', serif;
+    @apply font-bold;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -173,5 +185,26 @@
       padding-right: 2rem;
       max-width: 1280px; /* Standard content width */
     }
+  }
+
+  /* Custom utility classes for real estate website */
+  .btn-primary {
+    @apply px-6 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/90 transition-colors;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold text-foreground mb-2;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-muted-foreground mb-8;
+  }
+
+  .card-hover {
+    @apply transition-transform duration-300 hover:shadow-lg hover:-translate-y-1;
   }
 }
