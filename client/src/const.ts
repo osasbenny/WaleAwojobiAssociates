@@ -206,6 +206,20 @@ export const MOCK_PROPERTIES = [
     bathrooms: 2,
     area: 1500,
   },
+  {
+    id: 9,
+    title: "5 Bedroom Duplex with 2-Room BQ",
+    type: "Houses",
+    status: "For Sale",
+    price: 450000000,
+    location: "Gwagwalada, Abuja",
+    region: "Abuja",
+    image: "/properties/property-gwagwalada-duplex-1.jpg",
+    description: "Well-finished 5-bedroom duplex with 2-room boys quarters in Gwagwalada. Modern amenities, spacious layout, and excellent investment opportunity.",
+    bedrooms: 5,
+    bathrooms: 4,
+    area: 4500,
+  },
 ];
 
 // Testimonials
