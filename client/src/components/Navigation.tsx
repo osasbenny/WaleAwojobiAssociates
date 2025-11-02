@@ -7,15 +7,15 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
+    <nav className="header-nav">
       {/* Top Bar */}
-      <div className="hidden md:block bg-secondary text-secondary-foreground text-sm py-2">
-        <div className="container flex justify-end gap-6">
-          <a href={`tel:${COMPANY_PHONE[0]}`} className="flex items-center gap-2 hover:opacity-80 transition">
+      <div className="hidden md:block bg-primary text-primary-foreground text-sm py-3">
+        <div className="container flex justify-end gap-8">
+          <a href={`tel:${COMPANY_PHONE[0]}`} className="flex items-center gap-2 hover:text-accent transition-colors duration-300 font-medium">
             <Phone size={16} />
             {COMPANY_PHONE[0]}
           </a>
-          <a href={`mailto:${COMPANY_EMAIL}`} className="flex items-center gap-2 hover:opacity-80 transition">
+          <a href={`mailto:${COMPANY_EMAIL}`} className="flex items-center gap-2 hover:text-accent transition-colors duration-300 font-medium">
             <Mail size={16} />
             {COMPANY_EMAIL}
           </a>
@@ -25,17 +25,17 @@ export default function Navigation() {
       {/* Main Navigation */}
       <div className="container flex items-center justify-between py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 font-bold text-xl text-foreground hover:opacity-80 transition">
+        <Link href="/" className="flex items-center gap-2 font-bold text-xl text-foreground hover:opacity-90 transition-opacity duration-300">
           <img src="/logo.png" alt="Wale Awojobi Associates" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-1">
           {NAV_ITEMS.map((item: any) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-foreground hover:text-accent transition font-medium"
+              className="nav-link"
             >
               {item.label}
             </Link>
@@ -51,7 +51,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 hover:bg-muted rounded-lg transition"
+            className="md:hidden p-2 hover:bg-accent/10 rounded-lg transition-colors duration-300 text-foreground"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -60,14 +60,14 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden border-t border-border bg-card">
+        <div className="md:hidden border-t-2 border-accent bg-white">
           <div className="container py-4 flex flex-col gap-4">
             {NAV_ITEMS.map((item: any) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-foreground hover:text-accent transition font-medium py-2"
+                className="text-foreground hover:text-accent transition-colors duration-300 font-medium py-2 border-l-4 border-transparent hover:border-accent pl-3"
               >
                 {item.label}
               </Link>

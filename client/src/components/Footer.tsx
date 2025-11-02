@@ -4,24 +4,24 @@ import { COMPANY_NAME, COMPANY_ADDRESS, COMPANY_PHONE, COMPANY_EMAIL } from "@/c
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="footer-section">
       {/* Main Footer */}
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="font-bold text-lg mb-4">{COMPANY_NAME}</h3>
-            <p className="text-sm opacity-90 mb-4">
+            <h3 className="footer-title">{COMPANY_NAME}</h3>
+            <p className="text-primary-foreground/90 text-sm mb-4">
               Your trusted estate surveyors and valuation professionals providing top-tier services across Nigeria.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="hover:opacity-80 transition">
+              <a href="#" className="text-primary-foreground hover:text-accent transition-colors duration-300 hover:scale-110 transform">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="hover:opacity-80 transition">
+              <a href="#" className="text-primary-foreground hover:text-accent transition-colors duration-300 hover:scale-110 transform">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="hover:opacity-80 transition">
+              <a href="#" className="text-primary-foreground hover:text-accent transition-colors duration-300 hover:scale-110 transform">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -29,25 +29,25 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="footer-title">Company</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="hover:opacity-80 transition">
+                <Link href="/about" className="footer-link">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/team" className="hover:opacity-80 transition">
+                <Link href="/team" className="footer-link">
                   Our Team
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:opacity-80 transition">
+                <Link href="/blog" className="footer-link">
                   Blog
                 </Link>
               </li>
               <li>
-                <a href="#" className="hover:opacity-80 transition">
+                <a href="#" className="footer-link">
                   Careers
                 </a>
               </li>
@@ -56,25 +56,25 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <h4 className="footer-title">Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/listings" className="hover:opacity-80 transition">
+                <Link href="/listings" className="footer-link">
                   Property Listings
                 </Link>
               </li>
               <li>
-                <a href="#" className="hover:opacity-80 transition">
+                <a href="#" className="footer-link">
                   Valuation Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:opacity-80 transition">
+                <a href="#" className="footer-link">
                   Estate Surveying
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:opacity-80 transition">
+                <a href="#" className="footer-link">
                   Property Management
                 </a>
               </li>
@@ -83,20 +83,20 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
+            <h4 className="footer-title">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>{COMPANY_ADDRESS}</span>
+                <MapPin size={16} className="mt-1 flex-shrink-0 text-accent" />
+                <span className="text-primary-foreground">{COMPANY_ADDRESS}</span>
               </li>
               <li>
-                <a href={`tel:${COMPANY_PHONE[0]}`} className="flex items-center gap-2 hover:opacity-80 transition">
+                <a href={`tel:${COMPANY_PHONE[0]}`} className="footer-link flex items-center gap-2">
                   <Phone size={16} />
                   {COMPANY_PHONE[0]}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${COMPANY_EMAIL}`} className="flex items-center gap-2 hover:opacity-80 transition">
+                <a href={`mailto:${COMPANY_EMAIL}`} className="footer-link flex items-center gap-2">
                   <Mail size={16} />
                   {COMPANY_EMAIL}
                 </a>
@@ -106,15 +106,15 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-secondary-foreground/20 pt-8">
+        <div className="border-t border-primary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <p>&copy; 2025 {COMPANY_NAME} | All Rights Reserved.</p>
-            <p className="text-center">Designed by <a href="https://cactusdigitalmedia.ng" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition underline">Cactus Digital Media</a></p>
+            <p className="text-primary-foreground">&copy; 2025 {COMPANY_NAME} | All Rights Reserved.</p>
+            <p className="text-center text-primary-foreground">Designed by <a href="https://cactusdigitalmedia.ng" target="_blank" rel="noopener noreferrer" className="footer-link underline hover:no-underline">Cactus Digital Media</a></p>
             <div className="flex gap-6">
-              <a href="#" className="hover:opacity-80 transition">
+              <a href="#" className="footer-link">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:opacity-80 transition">
+              <a href="#" className="footer-link">
                 Terms of Service
               </a>
             </div>

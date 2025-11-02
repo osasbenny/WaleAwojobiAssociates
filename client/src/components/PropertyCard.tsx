@@ -33,24 +33,28 @@ export default function PropertyCard({
     return `₦${price.toLocaleString()}`;
   };
 
-  const statusColor = status === "For Sale" ? "bg-green-500" : "bg-blue-500";
+  const statusColor = status === "For Sale" ? "bg-green-500" : "bg-blue-600";
   const statusText = status === "For Sale" ? "For Sale" : "For Rent";
 
   return (
-    <div className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 card-hover">
+    <div className="property-card">
       {/* Image Container */}
-      <div className="relative overflow-hidden bg-muted h-64">
+      <div className="property-image">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+          loading="lazy"
+          onError={(e) => {
+            const img = e.target as HTMLImageElement;
+            img.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23e5e7eb' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' fill='%236b7280' text-anchor='middle' dy='.3em'%3EImage not available%3C/text%3E%3C/svg%3E";
+          }}
         />
         {/* Status Badge */}
-        <div className={`absolute top-4 left-4 ${statusColor} text-white px-3 py-1 rounded-full text-sm font-semibold`}>
+        <div className={`property-badge property-badge-${status === "For Sale" ? "sale" : "rent"}`}>
           {statusText}
         </div>
         {/* Featured Badge */}
-        <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">
+        <div className="property-badge-featured">
           Featured
         </div>
       </div>
@@ -71,8 +75,8 @@ export default function PropertyCard({
         {/* Features */}
         <div className="grid grid-cols-3 gap-4 py-4 border-t border-b border-border text-center">
           {bedrooms > 0 && (
-            <div>
-              <div className="flex items-center justify-center gap-1 text-muted-foreground mb-1">
+            <div className="hover:bg-gray-50 transition-colors duration-300 rounded p-2">
+              <div className="flex items-center justify-center gap-1 text-accent mb-1">
                 <Bed size={16} />
               </div>
               <p className="text-sm font-semibold text-foreground">{bedrooms}</p>
@@ -80,16 +84,16 @@ export default function PropertyCard({
             </div>
           )}
           {bathrooms > 0 && (
-            <div>
-              <div className="flex items-center justify-center gap-1 text-muted-foreground mb-1">
+            <div className="hover:bg-gray-50 transition-colors duration-300 rounded p-2">
+              <div className="flex items-center justify-center gap-1 text-accent mb-1">
                 <Bath size={16} />
               </div>
               <p className="text-sm font-semibold text-foreground">{bathrooms}</p>
               <p className="text-xs text-muted-foreground">Baths</p>
             </div>
           )}
-          <div>
-            <div className="flex items-center justify-center gap-1 text-muted-foreground mb-1">
+          <div className="hover:bg-gray-50 transition-colors duration-300 rounded p-2">
+            <div className="flex items-center justify-center gap-1 text-accent mb-1">
               <Maximize2 size={16} />
             </div>
             <p className="text-sm font-semibold text-foreground">{area}</p>
@@ -100,7 +104,7 @@ export default function PropertyCard({
         {/* Action Buttons */}
         <div className="flex gap-3 mt-4">
           <button className="flex-1 btn-primary text-sm">View Details</button>
-          <button className="flex-1 border border-border text-foreground hover:bg-muted rounded-lg py-2 transition">
+          <button className="flex-1 border-2 border-accent text-accent hover:bg-accent hover:text-white rounded-lg py-2 transition-all duration-300 font-semibold">
             Compare
           </button>
         </div>
