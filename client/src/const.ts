@@ -192,6 +192,20 @@ export const MOCK_PROPERTIES = [
     bathrooms: 4,
     area: 5000,
   },
+  {
+    id: 8,
+    title: "Office Space at Birgi Plaza",
+    type: "Offices",
+    status: "For Rent",
+    price: 4500000,
+    location: "Wuye, Abuja",
+    region: "Abuja",
+    image: "/properties/property-birgi-office-1.jpg",
+    description: "Premium office space available in various sizes at Birgi Plaza, Wuye. Modern facilities, excellent location, and high visibility for business operations.",
+    bedrooms: 0,
+    bathrooms: 2,
+    area: 1500,
+  },
 ];
 
 // Testimonials
