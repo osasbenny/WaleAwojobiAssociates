@@ -4,10 +4,10 @@ export { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
 export const COMPANY_NAME = "Wale Awojobi Associates";
 export const COMPANY_TAGLINE = "Your Trusted Estate Surveyors and Valuation Professionals.";
 export const COMPANY_ADDRESS = "58 Accra Street, Zone 5, Wuse Abuja, Nigeria";
-export const COMPANY_PHONE = ["07788249154", "08078697158"];
+export const COMPANY_PHONE = ["+234 802 314 3986"];
 export const COMPANY_EMAIL = "waleawojobi@gmail.com";
 export const COMPANY_WEBSITE = "https://waleawojobiassociates.com.ng";
-export const WHATSAPP_NUMBER = "08078697158";
+export const WHATSAPP_NUMBER = "+234 802 314 3986";
 
 // Navigation Items
 export const NAV_ITEMS = [
