@@ -3,7 +3,7 @@
 .pnpm-store/
 
 # Build outputs
-dist/
+# dist/ - Included in repo for cPanel deployment
 build/
 *.dist
 
