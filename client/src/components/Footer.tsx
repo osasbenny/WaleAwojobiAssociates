@@ -109,7 +109,7 @@ export default function Footer() {
         <div className="border-t border-secondary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <p>&copy; 2025 {COMPANY_NAME} | All Rights Reserved.</p>
-            <p className="text-center">Designed by Cactus Digital Media</p>
+            <p className="text-center">Designed by <a href="https://cactusdigitalmedia.ng" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition underline">Cactus Digital Media</a></p>
             <div className="flex gap-6">
               <a href="#" className="hover:opacity-80 transition">
                 Privacy Policy

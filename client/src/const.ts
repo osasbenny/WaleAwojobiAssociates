@@ -178,6 +178,20 @@ export const MOCK_PROPERTIES = [
     bathrooms: 2,
     area: 1400,
   },
+  {
+    id: 7,
+    title: "Well Finished 5 Bedroom Duplex with Swimming Pool",
+    type: "Houses",
+    status: "For Sale",
+    price: 800000000,
+    location: "Utako, Abuja",
+    region: "Abuja",
+    image: "/properties/property-utako-duplex-1.jpg",
+    description: "Luxurious 5-bedroom duplex with swimming pool, 2-room boys quarters, and premium finishes. Located in the prestigious Utako area of Abuja.",
+    bedrooms: 5,
+    bathrooms: 4,
+    area: 5000,
+  },
 ];
 
 // Testimonials
