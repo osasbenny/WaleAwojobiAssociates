@@ -177,6 +177,20 @@ export const MOCK_PROPERTIES = [
     bathrooms: 2,
     area: 1500,
   },
+  {
+    id: 7,
+    title: "3 Bedroom Flat",
+    type: "Apartments",
+    status: "For Rent",
+    price: 6000000,
+    location: "Apo, Abuja",
+    region: "Abuja",
+    image: "/properties/property-apo-flat-1.jpg",
+    description: "Spacious 3-bedroom flat in a serene environment at Apo. Modern amenities, well-maintained compound, and excellent security. Perfect for families and professionals.",
+    bedrooms: 3,
+    bathrooms: 2,
+    area: 1800,
+  },
 ];
 
 // Testimonials
