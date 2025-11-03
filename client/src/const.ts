@@ -3,10 +3,10 @@
 export const COMPANY_NAME = "Wale Awojobi Associates";
 export const COMPANY_TAGLINE = "Your Trusted Estate Surveyors and Valuation Professionals.";
 export const COMPANY_ADDRESS = "58 Accra Street, Zone 5, Wuse Abuja, Nigeria";
-export const COMPANY_PHONE = ["+234 802 314 3986"];
+export const COMPANY_PHONE = ["08023143976"];
 export const COMPANY_EMAIL = "waleawojobi@gmail.com";
 export const COMPANY_WEBSITE = "https://waleawojobiassociates.com.ng";
-export const WHATSAPP_NUMBER = "+234 802 314 3986";
+export const WHATSAPP_NUMBER = "08023143976";
 
 // Navigation Items
 export const NAV_ITEMS = [
@@ -38,27 +38,27 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 2,
-    name: "Adebayo Okafor",
-    title: "Estate Surveyor and Valuer",
+    name: "ESV. Ademiyu Adetunji",
+    title: "Associate Partner",
     credentials: "ESV",
     bio: "Specialist in property valuation and market analysis with extensive portfolio.",
-    image: "/team/adebayo-okafor.jpg",
+    image: "/team/ademiyu-adetunji.jpg",
   },
   {
     id: 3,
-    name: "Chioma Nwankwo",
-    title: "Accountant",
-    credentials: "ACA",
-    bio: "Financial management expert ensuring transparent and accurate transactions.",
-    image: "/team/chioma-nwankwo.jpg",
+    name: "ESV. Tonyin Ilori",
+    title: "Associate Partner",
+    credentials: "ESV",
+    bio: "Expert in real estate advisory and property management with proven track record.",
+    image: "/team/tonyin-ilori.jpg",
   },
   {
     id: 4,
-    name: "Emeka Okonkwo",
+    name: "Lewis Iyoghigie",
     title: "ICT Consultant",
     credentials: "BSc",
     bio: "Technology specialist managing digital solutions and client platforms.",
-    image: "/team/emeka-okonkwo.jpg",
+    image: "/team/lewis-iyoghigie.jpg",
   },
 ];
 
