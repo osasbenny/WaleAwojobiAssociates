@@ -28,12 +28,12 @@ export default function Team() {
             {TEAM_MEMBERS.map((member) => (
               <div key={member.id} className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition card-hover">
                 {/* Image */}
-                <div className="bg-muted h-64 flex items-center justify-center overflow-hidden">
+                <div className="bg-muted h-64 flex items-center justify-center overflow-hidden relative">
                   {member.image ? (
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
                       onError={(e) => {
                         const img = e.target as HTMLImageElement;
                         img.style.display = "none";
