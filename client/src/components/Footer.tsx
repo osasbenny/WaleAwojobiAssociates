@@ -78,6 +78,11 @@ export default function Footer() {
                   Property Management
                 </a>
               </li>
+              <li>
+                <a href="#" className="footer-link">
+                  Project Management
+                </a>
+              </li>
             </ul>
           </div>
 
