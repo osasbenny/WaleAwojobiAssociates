@@ -4,7 +4,7 @@ export const COMPANY_NAME = "Wale Awojobi Associates";
 export const COMPANY_TAGLINE = "Your Trusted Estate Surveyors and Valuation Professionals.";
 export const COMPANY_ADDRESS = "58 Accra Street, Zone 5, Wuse Abuja, Nigeria";
 export const COMPANY_PHONE = ["08023143976"];
-export const COMPANY_EMAIL = "waleawojobi@gmail.com";
+export const COMPANY_EMAIL = "waleawojobiassociates@gmail.com";
 export const COMPANY_WEBSITE = "https://waleawojobiassociates.com.ng";
 export const WHATSAPP_NUMBER = "08023143976";
 

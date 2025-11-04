@@ -14,6 +14,22 @@ export default function About() {
       {/* Content Section */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container max-w-4xl">
+          {/* About Us */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-foreground">About Us</h2>
+            <div className="space-y-4 text-lg text-muted-foreground">
+              <p>
+                WALE AWOJOBI + ASSOCIATES is an indigenous firm of Estate Surveying and Valuation registered in Nigeria on the 14th day of June, 2010 as a business concern with registration number RC2138243, and approved by the Estate Surveyors and Valuers Registration Board of Nigeria (ESVARBON) to practice the Profession of Estate Surveying and Valuation throughout the Federation. The firm WALE AWOJOBI + ASSOCIATES is a professional member of the Nigerian Institution of Estate Surveyors and Valuers.
+              </p>
+              <p>
+                The firm has offices in Abuja, Lagos, Port Harcourt, Nasarawa, Kaduna and Birnin Kebbi which are manned by seasoned Estate Surveyors and Valuers of considerable experience and competence. The diverse skills incorporated in the firm of WALE AWOJOBI + ASSOCIATES are organised to provide both direct technical input into specific project as well as to provide support services in the multi-disciplinary scope.
+              </p>
+              <p>
+                Our quest for your kind consideration and enlistment as Consultant Estate Surveyor and Valuer is pivoted on our proven skills and experience in the multi-various professional services we render. Thus, we hereby affirm that our firm of Estate Surveyors and Valuers is eminently qualified and able to discharge all briefs that will be referred to it, to your satisfaction and commendation. This we have successfully done in the recent past and our professional services have thus remained a reference point.
+              </p>
+            </div>
+          </div>
+
           {/* Mission */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold mb-6 text-foreground">Our Mission</h2>
@@ -84,6 +100,13 @@ export default function About() {
                 <p className="text-muted-foreground">
                   Full-service property management solutions including tenant management, maintenance coordination, and
                   financial reporting.
+                </p>
+              </div>
+              <div className="bg-card p-6 rounded-lg border border-border">
+                <h3 className="text-xl font-bold mb-2 text-foreground">Project Management</h3>
+                <p className="text-muted-foreground">
+                  Expert project management services for real estate development and construction projects, ensuring
+                  timely delivery and budget compliance.
                 </p>
               </div>
               <div className="bg-card p-6 rounded-lg border border-border">

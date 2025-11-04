@@ -108,7 +108,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <p className="text-primary-foreground">&copy; 2025 {COMPANY_NAME} | All Rights Reserved.</p>
+            <p className="text-primary-foreground">&copy; 2025 Wale Awojobi & Associates | All Rights Reserved.</p>
             <p className="text-center text-primary-foreground">Designed by <a href="https://cactusdigitalmedia.ng" target="_blank" rel="noopener noreferrer" className="footer-link underline hover:no-underline">Cactus Digital Media</a></p>
             <div className="flex gap-6">
               <a href="#" className="footer-link">
